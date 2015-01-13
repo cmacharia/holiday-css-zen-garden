@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:400,700);
+
+html {
+    font-size: 100%;
+    line-height: 1;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3, h4{
+    font-family:'Amatic SC', cursive;
+    
+    }
+h3, h4 {
+    font-weight: 400;  
+}
+h1 { font-size: 4em;}
+h2 {font-size: 3em;}
+h3 {font-size: 2em;}
+p {
+    font-family: Josefin Sans, sans-serif;
+    line-height: 1.4;
+}
+header {
+    width: 100%;
+    text-align: center;
+}
+.intro .preamble h3, .intro .preamble p {
+    margin: 0 auto;
+    width: 85%;
+}
+.main p , .main h3 { margin: 0 auto;
+    width: 85%;}
+header, .summary { color: #fff;}
+body { background: url(../images/star-bg.jpg);}
+.summary {padding-top: 1.4em;}
+.summary p {margin: 0 auto; width: 90%;}
+.summary:after {
+    background: url("../images/santa.png") no-repeat scroll 50% 0em, url("../images/snow-top-bg.png") repeat-x scroll center bottom / 20em rgba(0, 0, 0, 0);
+    height: 24em;
+    display: block;
+    content: ""; }
+.intro .preamble:before { background: url("../images/top-snow.jpg") repeat-x scroll top left / 13em auto rgba(0, 0, 0, 0); height: 5em; display: block; content: "";}
+
+.intro .preamble:after { background: url("../images/snowman.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
+.intro .preamble { background: url(../images/paper-bg-test.jpg); }
+.explanation:after { background: url("../images/deer.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
+.participation:after { background: url("../images/penguin.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
+.benefits:after { background: url("../images/small-penguin.png") no-repeat scroll center / 17em; height: 13em; display: block; content: "";}
+.main {background: url(../images/paper-bg-test.jpg);}
+footer, aside {margin: 0 auto; text-align:  center; }
+footer {padding: 1.4em 0;}
+footer a {font-family: "Amatic SC",cursive; color: #000; font-size: 1.7em;}
+aside { padding: 1.4em 0;}
+aside div {margin-bottom: 1.4em;}
+aside ul {list-style:  none;}
+@media screen and (min-width: 690px) {
+    
+    .intro .preamble h3, .intro .preamble p {max-width: 540px;}
+    .intro .preamble:after { width: 40%;}
+    
+}
