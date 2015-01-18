@@ -56,19 +56,36 @@ aside div {margin-bottom: 1.4em;}
 aside ul {list-style:  none;}
 @media screen and (min-width: 690px) {
     
-    .intro .preamble h3, .intro .preamble p {max-width: 540px;}
-    .intro .preamble:after { width: 40%;}
+    .intro .preamble h3, .intro .preamble p {max-width: 540px; float: left;
+    position: relative;
+    left: 50%;
+    clear: both;
+   
+    }
+    .intro .preamble:after { float: left;
+    position: relative;
+    left: 50%;
+    clear: both;  width: 14em; margin-top: -218px; margin-left:-260px ;}
     
+.supporting > * {
+  float: left;
+}
+aside {float:left;}
+.main{overflow: hidden; width: 100%; position: relative; top: 0;}
+.preamble { overflow: hidden; width: 100%; position: relative; top: 0;}
+
 }
 
+
 @media screen and (min-width: 800px) {
-    .summary p, header h1, header h2 { max-width: 537px;clear: left;
+.summary p, header h1, header h2 { max-width: 450px;clear: left;
         float: left;
     left: 50%;
     margin-left: -20px;
-    max-width: 500px;
+    max-width: 440px;
     position: relative;
     top: -250px;
+    clear: both;
  
     position: relative;}
     .summary:after{    background: url("none") no-repeat scroll 25% 0em, url("../images/snow-top-bg.png") repeat-x scroll center bottom / 20em rgba(0, 0, 0, 0);}
@@ -79,6 +96,8 @@ aside ul {list-style:  none;}
     position: relative;
     top: 56px;
     width: 220px;}
-    
+    header h2 {margin-bottom: .35em;}
+.main {top: -115px;}
+ .preamble { top: -115px;}   
     
 }
