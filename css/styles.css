@@ -56,24 +56,27 @@ aside div {margin-bottom: 1.4em;}
 aside ul {list-style:  none;}
 @media screen and (min-width: 690px) {
     
-    .intro .preamble h3, .intro .preamble p {max-width: 540px; float: left;
+    .intro .preamble h3, .intro .preamble p, .participation p, .participation h3 {max-width: 355px; float: left;
     position: relative;
-    left: 50%;
+    left: 46%;
     clear: both;
    
     }
     .intro .preamble:after { float: left;
     position: relative;
-    left: 50%;
-    clear: both;  width: 14em; margin-top: -218px; margin-left:-260px ;}
+    left: 46%;
+    clear: both;  width: 14em; margin-top: -260px; margin-left:-260px ;}
     
 .supporting > * {
   float: left;
+  overflow: hidden;
+  width: 100%
 }
 aside {float:left;}
 .main{overflow: hidden; width: 100%; position: relative; top: 0;}
 .preamble { overflow: hidden; width: 100%; position: relative; top: 0;}
-
+.explanation h3, .explanation p {float: left;  max-width: 433px; clear: left; position: relative;left: 50%;margin-left: -330px;}
+.explanation:after {float: left; position:  relative;left: 50%;clear: right; width:14em;margin-top: -130px;}
 }
 
 
