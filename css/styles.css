@@ -25,6 +25,7 @@ header {
     width: 100%;
     text-align: center;
 }
+header h1 {padding-top: .7em;}
 .intro .preamble h3, .intro .preamble p {
     margin: 0 auto;
     width: 85%;
@@ -54,9 +55,11 @@ footer a {font-family: "Amatic SC",cursive; color: #000; font-size: 1.7em;}
 aside { padding: 1.4em 0;}
 aside div {margin-bottom: 1.4em;}
 aside ul {list-style:  none;}
+
+
 @media screen and (min-width: 690px) {
     
-    .intro .preamble h3, .intro .preamble p, .participation p, .participation h3 {max-width: 355px; float: left;
+    .intro .preamble h3, .intro .preamble p, .participation p, .participation h3, .benefits p, .benefits h3 {max-width: 355px; float: left;
     position: relative;
     left: 46%;
     clear: both;
@@ -70,13 +73,21 @@ aside ul {list-style:  none;}
 .supporting > * {
   float: left;
   overflow: hidden;
-  width: 100%
+  width: 100%; padding-top: 1.75em;
 }
 aside {float:left;}
 .main{overflow: hidden; width: 100%; position: relative; top: 0;}
 .preamble { overflow: hidden; width: 100%; position: relative; top: 0;}
 .explanation h3, .explanation p {float: left;  max-width: 433px; clear: left; position: relative;left: 50%;margin-left: -330px;}
 .explanation:after {float: left; position:  relative;left: 50%;clear: right; width:14em;margin-top: -130px;}
+.participation:after { float: left;
+    position: relative;
+    left: 46%;
+    clear: both;  width: 14em; margin-top: -400px; margin-left:-260px ;}
+    .benefits:after {float: left;
+    position: relative;
+    left: 46%;
+    clear: both;  width: 14em; margin-top: -170px; margin-left:-260px ;}
 }
 
 
@@ -100,7 +111,7 @@ aside {float:left;}
     top: 56px;
     width: 220px;}
     header h2 {margin-bottom: .35em;}
-.main {top: -115px;}
- .preamble { top: -115px;}   
+.main {top: -155px;}
+ .preamble { top: -155px;}   
     
 }
