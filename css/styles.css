@@ -312,7 +312,7 @@ aside nav li:first-child {
     margin-left: -20px;
     max-width: 440px;
     position: relative;
-    top: -250px;
+    top: -125px;
     clear: both;
     position: relative;
     }
@@ -328,7 +328,7 @@ header:before {
     content: "";
     float: left;
     left: 50%;
-    margin: 0 0 0 -250px;
+    margin: 0 0 -156px -250px;
     position: relative;
     top: 56px;
     width: 220px;
@@ -338,14 +338,13 @@ header h2 {
     }
     
 .main {
-    top: -162px;
+    
     }
  .preamble {
-    top: -162px;
+    
     }
 aside {
-        position: relative;
-        top: -162px;
+       
         }
     
 }
