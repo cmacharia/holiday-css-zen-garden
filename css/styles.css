@@ -272,7 +272,7 @@ aside nav li:first-child {
         margin-top: -170px;
         margin-left:-260px ;
         }
-    .requirements { max-width: 800px;}
+    .requirements { max-width: 800px; margin: 0 auto; float: none;}
     /*.requirements {
         position: relative;
         left: 50%;
