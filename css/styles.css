@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
 
 html {
     font-size: 100%;
@@ -9,109 +10,305 @@ html {
 }
 h1, h2, h3, h4{
     font-family:'Amatic SC', cursive;
-    
     }
+    
 h3, h4 {
-    font-weight: 400;  
-}
-h1 { font-size: 4em;}
-h2 {font-size: 3em;}
-h3 {font-size: 2em;}
+    font-weight: 400;
+    }
+    
+h1 {
+    font-size: 4em;
+    }
+    
+h2 {
+    font-size: 3em;
+    }
+    
+h3 {
+    font-size: 2em;
+    }
 p {
     font-family: Josefin Sans, sans-serif;
     line-height: 1.4;
-}
+    }
+    
+p a {
+    color: black; font-weight: 700;
+    }
+    
+p a abbr {
+    font-weight: 700;
+    }
+    
+abbr {
+    font-family: Josefin Sans, sans-serif; font-weight: 400;
+    }
+
 header {
     width: 100%;
     text-align: center;
-}
-header h1 {padding-top: .7em;}
+    }
+    
+header h1 {
+    padding-top: .7em;
+    }
+    
+header h1, header h2 {
+    text-shadow: 0 5px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+header h2 abbr {
+    font-family:'Amatic SC', cursive; font-weight: 700;
+    }
+    
 .intro .preamble h3, .intro .preamble p {
     margin: 0 auto;
     width: 85%;
-}
-.main p , .main h3 { margin: 0 auto;
-    width: 85%;}
-header, .summary { color: #fff;}
-body { background: url(../images/star-bg.jpg);}
-.summary {padding-top: 1.4em;}
-.summary p {margin: 0 auto; width: 90%;}
+    }
+    
+.main p , .main h3 {
+    margin: 0 auto;
+    width: 85%;
+    }
+    
+header, .summary {
+    color: #fff;
+    }
+    
+body {
+    background: url(../images/star-bg.jpg);
+    }
+    
+.summary {
+    padding-top: 1.4em;
+    }
+    
+.summary p {
+    margin: 0 auto;
+    width: 90%;
+    }
+    
+.summary a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-decoration:  none;
+    }
+    
+.summary a:hover {
+    text-decoration:  underline;
+    }
 .summary:after {
     background: url("../images/santa.png") no-repeat scroll 50% 0em, url("../images/snow-top-bg.png") repeat-x scroll center bottom / 20em rgba(0, 0, 0, 0);
     height: 24em;
     display: block;
-    content: ""; }
-.intro .preamble:before { background: url("../images/top-snow.jpg") repeat-x scroll top left / 13em auto rgba(0, 0, 0, 0); height: 5em; display: block; content: "";}
+    content: "";
+    }
+    
+.intro .preamble:before {
+    background: url("../images/top-snow.jpg") repeat-x scroll top left / 13em auto rgba(0, 0, 0, 0);
+    height: 5em;
+    display: block;
+    content: "";
+    }
 
-.intro .preamble:after { background: url("../images/snowman.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
-.intro .preamble { background: url(../images/paper-bg-test.jpg); }
-.explanation:after { background: url("../images/deer.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
-.participation:after { background: url("../images/penguin.png") no-repeat scroll center / 14em; height: 18em; display: block; content: "";}
-.benefits:after { background: url("../images/small-penguin.png") no-repeat scroll center / 17em; height: 13em; display: block; content: "";}
-.main {background: url(../images/paper-bg-test.jpg);}
-footer, aside {margin: 0 auto; text-align:  center; }
-footer {padding: 1.4em 0;}
-footer a {font-family: "Amatic SC",cursive; color: #000; font-size: 1.7em;}
-aside { padding: 1.4em 0;}
-aside div {margin-bottom: 1.4em;}
-aside ul {list-style:  none;}
+.intro .preamble:after {
+    background: url("../images/snowman.png") no-repeat scroll center / 14em;
+    height: 18em;
+    display: block;
+    content: "";
+    }
+    
+.intro .preamble {
+    background: url(../images/paper-bg-test.jpg);
+    }
+    
+.explanation:after {
+    background: url("../images/deer.png") no-repeat scroll center / 14em;
+    height: 18em;
+    display: block;
+    content: "";
+    }
+.participation:after {
+    background: url("../images/penguin.png") no-repeat scroll center / 14em;
+    height: 18em;
+    display: block;
+    content: "";
+    }
+    
+.benefits:after {
+    background: url("../images/small-penguin.png") no-repeat scroll center / 17em;
+    height: 13em;
+    display: block;
+    content: "";
+    }
+    
+.main {
+    background: url(../images/paper-bg-test.jpg);
+    }
+    
+footer, aside 
+    margin: 0 auto;
+    text-align:  center;
+    }
+footer {
+    padding: 1.4em 0;
+    }
+    
+footer a {
+    font-family: "Amatic SC",cursive;
+    color: #000;
+    font-size: 1.7em;
+    }
+    
+aside {
+    padding: 1.4em 0;
+    }
+    
+aside div {
+    margin-bottom: 1.4em;
+    }
+    
+aside ul {
+    list-style:  none;
+    }
 
 
 @media screen and (min-width: 690px) {
-    
-    .intro .preamble h3, .intro .preamble p, .participation p, .participation h3, .benefits p, .benefits h3 {max-width: 355px; float: left;
-    position: relative;
-    left: 46%;
-    clear: both;
-   
-    }
-    .intro .preamble:after { float: left;
-    position: relative;
-    left: 46%;
-    clear: both;  width: 14em; margin-top: -260px; margin-left:-260px ;}
-    
-.supporting > * {
-  float: left;
-  overflow: hidden;
-  width: 100%; padding-top: 1.75em;
-}
-aside {float:left;}
-.main{overflow: hidden; width: 100%; position: relative; top: 0;}
-.preamble { overflow: hidden; width: 100%; position: relative; top: 0;}
-.explanation h3, .explanation p {float: left;  max-width: 433px; clear: left; position: relative;left: 50%;margin-left: -330px;}
-.explanation:after {float: left; position:  relative;left: 50%;clear: right; width:14em;margin-top: -130px;}
-.participation:after { float: left;
-    position: relative;
-    left: 46%;
-    clear: both;  width: 14em; margin-top: -400px; margin-left:-260px ;}
-    .benefits:after {float: left;
-    position: relative;
-    left: 46%;
-    clear: both;  width: 14em; margin-top: -170px; margin-left:-260px ;}
+
+    .intro .preamble h3, .intro .preamble p, .participation p, .participation h3, .benefits p, .benefits h3 {
+        max-width: 355px; float: left;
+        position: relative;
+        left: 46%;
+        clear: both;
+        }
+        
+    .intro .preamble:after {
+        float: left;
+        position: relative;
+        left: 46%;
+        clear: both;  width: 14em; margin-top: -260px; margin-left:-260px ;
+        }
+        
+    .supporting > * {
+      float: left;
+      overflow: hidden;
+      width: 100%; padding-top: 1.75em;
+      }
+      
+    aside {
+        float:left;
+        }
+        
+    .main{
+        overflow: hidden; width: 100%; position: relative; top: 0;
+        }
+        
+    .preamble {
+        overflow: hidden;
+        width: 100%; position:
+        relative;
+        top: 0;
+        }
+        
+    .explanation h3, .explanation p {
+        float: left;
+        max-width: 433px;
+        clear: left;
+        position: relative;
+        left: 50%;
+        margin-left: -330px;
+        }
+        
+    .explanation:after {
+        float: left;
+        position:  relative;
+        left: 50%;
+        clear: right;
+        width:14em;
+        margin-top: -130px;
+        }
+        
+    .participation:after {
+        float: left;
+        position: relative;
+        left: 46%;
+        clear: both;
+        width: 14em;
+        margin-top: -400px;
+        margin-left:-260px ;
+        }
+        
+    .benefits:after {
+        float: left;
+        position: relative;
+        left: 46%;
+        clear: both;
+        width: 14em;
+        margin-top: -170px;
+        margin-left:-260px ;
+        }
+    /*.requirements {
+        position: relative;
+        left: 50%;
+        margin-left: -520px;
+    } */
+    .requirements h3:before {
+        background: url("../images/bird.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+        content: "";
+        display: inline-block;
+        height: 86px;
+        width: 85px;}
+        .requirements h3 {padding-bottom: .35em;
+        }
+    /*.requirements p {
+        float: left;
+        margin-top: 0;
+        max-width: 495px;
+        width: 47.5%;
+    }*/
+
 }
 
 
 @media screen and (min-width: 800px) {
-.summary p, header h1, header h2 { max-width: 450px;clear: left;
-        float: left;
+.summary p, header h1, header h2 {
+    max-width: 450px;clear: left;
+    float: left;
     left: 50%;
     margin-left: -20px;
     max-width: 440px;
     position: relative;
     top: -250px;
     clear: both;
- 
-    position: relative;}
-    .summary:after{    background: url("none") no-repeat scroll 25% 0em, url("../images/snow-top-bg.png") repeat-x scroll center bottom / 20em rgba(0, 0, 0, 0);}
-    header:before { background: url("../images/santa.png") no-repeat scroll center / 13em; height: 20em; display: block; content: "";
-        float: left;
+    position: relative;
+    }
+    
+.summary:after{
+    background: url("none") no-repeat scroll 25% 0em, url("../images/snow-top-bg.png") repeat-x scroll center bottom / 20em rgba(0, 0, 0, 0);
+    }
+
+header:before {
+    background: url("../images/santa.png") no-repeat scroll center / 13em;
+    height: 20em;
+    display: block;
+    content: "";
+    float: left;
     left: 50%;
     margin: 0 0 0 -250px;
     position: relative;
     top: 56px;
-    width: 220px;}
-    header h2 {margin-bottom: .35em;}
-.main {top: -155px;}
- .preamble { top: -155px;}   
+    width: 220px;
+    }
+header h2 {
+    margin-bottom: .35em;
+    }
+    
+.main {
+    top: -162px;
+    }
+ .preamble {
+    top: -162px;
+    }   
     
 }
