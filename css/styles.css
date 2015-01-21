@@ -31,7 +31,9 @@ p {
     font-family: Josefin Sans, sans-serif;
     line-height: 1.4;
     }
-    
+a, a abbr{
+    font-family: 'Josefin Sans', sans-serif;
+}    
 p a {
     color: black; font-weight: 700;
     }
@@ -88,14 +90,14 @@ body {
     width: 90%;
     }
     
-.summary a {
+.summary a, {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
     text-decoration:  none;
     }
     
-.summary a:hover {
+.summary a:hover, .zen-resources li a:hover {
     text-decoration:  underline;
     }
 .summary:after {
@@ -112,6 +114,15 @@ body {
     content: "";
     }
 
+ aside:before {
+    background: url("../images/footer_snow.jpg") repeat-x scroll top left / 13em auto rgba(255, 255, 255, 1);
+    height: 5em;
+    display: block;
+    content: "";
+    }
+.zen-resources li {line-height: 1.4em}
+ .zen-resources li a, .zen-resources li a abbr {font-weight: 700; color: black;}
+.zen-resources li a :hover { color: #3a3a3a;}
 .intro .preamble:after {
     background: url("../images/snowman.png") no-repeat scroll center / 14em;
     height: 18em;
@@ -147,7 +158,7 @@ body {
     background: url(../images/paper-bg-test.jpg);
     }
     
-footer, aside 
+footer, aside { 
     margin: 0 auto;
     text-align:  center;
     }
@@ -161,18 +172,33 @@ footer a {
     font-size: 1.7em;
     }
     
-aside {
-    padding: 1.4em 0;
-    }
+
     
 aside div {
-    margin-bottom: 1.4em;
+    padding-bottom: 1.4em;
     }
-    
+aside .wrapper {
+    padding-bottom: 1.4em;
+    background: white;
+    }    
 aside ul {
     list-style:  none;
     }
+aside nav li {
+    font-family:  'Amatic SC', cursive;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    line-height: 2.1em;
+    
+}
+.design-selection li {padding: .7em 0; line-height: 1.05em}
+.design-selection li a { font-family:  'Amatic SC', cursive;}
+.design-selection li a:first-child { display: block; font-family: 'Josefin Sans', sans-serif;}
+aside nav li:first-child {
+    border-top: 1px solid black;
 
+    
+}
 
 @media screen and (min-width: 690px) {
 
@@ -196,9 +222,7 @@ aside ul {
       width: 100%; padding-top: 1.75em;
       }
       
-    aside {
-        float:left;
-        }
+    
         
     .main{
         overflow: hidden; width: 100%; position: relative; top: 0;
@@ -261,6 +285,14 @@ aside ul {
         width: 85px;}
         .requirements h3 {padding-bottom: .35em;
         }
+        
+    aside nav ul { width: 75%; margin: 0 auto;}
+    .zen-resources ul {padding: .7em;}
+    .zen-resources li {
+        display: inline-block;
+        padding-left: .7em;
+        }
+
     /*.requirements p {
         float: left;
         margin-top: 0;
@@ -309,6 +341,10 @@ header h2 {
     }
  .preamble {
     top: -162px;
-    }   
+    }
+aside {
+        position: relative;
+        top: -162px;
+        }
     
 }
