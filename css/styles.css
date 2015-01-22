@@ -191,9 +191,11 @@ aside nav li {
     line-height: 2.1em;
     
 }
+aside nav li a { color: black;}
+aside nav li a:hover {color: #c2b59b;}
 .design-selection li {padding: .7em 0; line-height: 1.05em}
 .design-selection li a { font-family:  'Amatic SC', cursive;}
-.design-selection li a:first-child { display: block; font-family: 'Josefin Sans', sans-serif;}
+.design-selection li a:first-child { display: block; font-family: 'Josefin Sans', sans-serif; font-weight: 700;}
 aside nav li:first-child {
     border-top: 1px solid black;
 
@@ -208,12 +210,12 @@ aside nav li:first-child {
         left: 46%;
         clear: both;
         }
-        
+    .intro .preamble h3, .intro .preamble p { margin-left: -50px; max-width: 420px;}    
     .intro .preamble:after {
         float: left;
         position: relative;
         left: 46%;
-        clear: both;  width: 14em; margin-top: -260px; margin-left:-260px ;
+        clear: both;  width: 14em; margin-top: -260px; margin-left:-300px ;
         }
         
     .supporting > * {
@@ -347,4 +349,22 @@ aside {
        
         }
     
+}
+
+@media screen and (min-width: 940px) {
+    
+.intro .preamble h3, .intro .preamble p, .participation p, .participation h3, .benefits p, .benefits h3 {
+    max-width:440px;
+    left: 50%
+    }
+.intro .preamble:after {
+    left:50%;
+}
+
+.explanation h3, .explanation p  {
+    max-width: 485px;
+    }
+.requirements {
+    max-width: 850px;
+}
 }
